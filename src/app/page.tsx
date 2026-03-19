@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { Link, FileText, Mail, Phone, MessageSquare, Wifi, MapPin, Contact, CalendarDays, Share2, Bitcoin } from "lucide-react";
 import Tabs from "@/components/ui/Tabs";
 import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
 import QRPreview from "@/components/generator/QRPreview";
 import QRControls from "@/components/generator/QRControls";
 import { QRType, formatQRData } from "@/utils/qr-handlers";
@@ -176,6 +177,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
