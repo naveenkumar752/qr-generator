@@ -1,0 +1,45 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topContainer {
+  margin-bottom: 24px;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 24px;
+  align-items: start;
+}
+
+.previewColumn {
+  height: 100%;
+}
+
+.previewSticky {
+  position: sticky;
+  top: 40px; /* Reset offset */
+  background: var(--surface-secondary);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  height: auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+}
